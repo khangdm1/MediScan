@@ -1,0 +1,27 @@
+# --- Web Framework & API ---
+fastapi>=0.95.0
+uvicorn[standard]>=0.22.0
+python-multipart          # Cần thiết để upload file (UploadFile)
+python-dotenv             # Để đọc file .env
+
+# --- Database ---
+sqlalchemy>=2.0.0
+psycopg2-binary           # Driver PostgreSQL (bản binary dễ cài đặt hơn)
+
+# --- Deep Learning & AI Core ---
+tensorflow                # Thư viện chính cho ResNet
+numpy                     # Xử lý ma trận số học
+pandas                    # Đọc file excel/csv
+scikit-learn              # Dùng cho train_test_split, classification_report
+
+# --- Image Processing & OCR ---
+easyocr                   # Thư viện OCR đọc chữ
+opencv-python-headless    # Xử lý ảnh (bản headless nhẹ, không cần GUI, chuyên cho Server/Docker)
+Pillow                    # Thư viện xử lý ảnh PIL
+thefuzz                   # So khớp chuỗi (Fuzzy matching trong config_ocr.py)
+python-Levenshtein        # Tăng tốc độ cho thefuzz (optional nhưng nên có)
+
+# --- Utilities & Visualization ---
+openpyxl                  # Cần thiết để Pandas đọc file .xlsx
+matplotlib                # Vẽ biểu đồ (dùng trong evaluate.py)
+seaborn                   # Vẽ biểu đồ đẹp hơn
